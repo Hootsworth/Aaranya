@@ -27,8 +27,7 @@
         <svg class="leaf-icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
         </svg>
-        Aaranya.
-        <span class="brand-tagline-sub">University</span>
+        AU
       </a>
 
       <nav class="main-navigation">
@@ -64,7 +63,7 @@
   <div class="drawer-backdrop"></div>
   <div class="mobile-nav-drawer">
     <div class="drawer-header">
-      <span class="brand-wordmark">Aaranya.</span>
+      <span class="brand-wordmark">AU</span>
       <button class="drawer-close">&times;</button>
     </div>
     <div class="drawer-links">
@@ -142,8 +141,16 @@
         <p class="lead-text">Inspect the year-by-year academic syllabus, core modules, lab studios, and capstones across our undergraduate, graduate, and doctoral tracks.</p>
       </div>
 
+      <!-- Interactive Course Selection Tabs -->
+      <div class="curriculum-selector-nav">
+        <button class="course-selector-btn active" data-target="cs-btech">B.Tech. in Computer Science</button>
+        <button class="course-selector-btn" data-target="cs-bsc">B.Sc. in Computer Science</button>
+        <button class="course-selector-btn" data-target="cs-msc">M.Sc. in Advanced Computing</button>
+        <button class="course-selector-btn" data-target="cs-phd">Ph.D. in Computer Science</button>
+      </div>
+
       <!-- Curriculum Block 1: B.Tech. in Computer Science -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block active" id="cs-btech">
         <div class="curriculum-degree-header">
           <div>
             <h3>B.Tech. in Computer Science</h3>
@@ -211,10 +218,58 @@
             </div>
           </div>
         </div>
+        <!-- Minors & Electives for B.Tech. CS -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Recommended Minors (20–24 Credits)
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Cognitive Science & Philosophy of Mind</strong>
+                Offered with Liberal Arts: Neural computation, epistemology, philosophy of consciousness, and semantic models.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Cyber Law & Digital Ethics</strong>
+                Offered with School of Law: Algorithmic regulation, GDPR & data sovereignty, intellectual property in code, and cyber forensic policy.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Interaction Design & HCI</strong>
+                Offered with School of Design: Spatial computing, hardware interaction rigs, UI prototyping, and haptic systems.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Computational Economics & FinTech</strong>
+                Offered with Business School: Algorithmic game theory, financial econometrics, automated market makers, and blockchain.
+              </div>
+            </div>
+          </div>
+
+          <div class="electives-pool-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Departmental Elective Pools (Semesters 5–8)
+            </h4>
+            <div class="electives-list">
+              <div class="elective-item">
+                <strong>Intelligent Systems Pool:</strong> Natural Language Processing, Reinforcement Learning, Computer Vision, Autonomous Robotics, Generative Audio/Video Models.
+              </div>
+              <div class="elective-item">
+                <strong>Systems & Cloud Architecture Pool:</strong> High-Performance Distributed Clusters, Site Reliability Engineering, Microservices Orchestration, Linux Kernel Hacking.
+              </div>
+              <div class="elective-item">
+                <strong>Security & Cryptography Pool:</strong> Zero-Knowledge Proofs, Post-Quantum Cryptography, Network Penetration Testing, Binary Exploitation.
+              </div>
+              <div class="elective-item">
+                <strong>Open Interdisciplinary Elective:</strong> Any 4 credits selected from Liberal Arts, Law, Business, or Design.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Curriculum Block 2: B.Sc. in Computer Science -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="cs-bsc">
         <div class="curriculum-degree-header">
           <div>
             <h3>B.Sc. in Computer Science</h3>
@@ -254,10 +309,48 @@
             </div>
           </div>
         </div>
+        <!-- Minors & Electives for B.Sc. CS -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Available Minor Concentrations
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Mathematics & Statistical Modeling:</strong> Probability Theory, Numerical Methods, Graph Theory, and Stochastic Processes.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Digital Humanities:</strong> Computational Linguistics, Text Mining in Ancient Literature, and Cultural Analytics.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Sustainable Technology:</strong> Green Data Centers, Electronic Waste Life-Cycles, and Low-Power Edge Computing.
+              </div>
+            </div>
+          </div>
+
+          <div class="electives-pool-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Elective Specialization Modules
+            </h4>
+            <div class="electives-list">
+              <div class="elective-item">
+                <strong>Elective Pool A:</strong> Full-Stack React & Node Systems, Mobile App Engineering (Flutter/Swift), Modern DevOps Pipelines.
+              </div>
+              <div class="elective-item">
+                <strong>Elective Pool B:</strong> Relational Database Optimization, Big Data with PySpark, Cloud Fundamentals (AWS/GCP).
+              </div>
+              <div class="elective-item">
+                <strong>University Elective:</strong> Any 1 course from Business Management, Environmental Economics, or Constitutional Law.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Curriculum Block 3: M.Sc. in Advanced Computing -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="cs-msc">
         <div class="curriculum-degree-header">
           <div>
             <h3>M.Sc. in Advanced Computing</h3>
@@ -287,10 +380,51 @@
             </div>
           </div>
         </div>
+        <!-- Graduate Specialization Clusters for M.Sc. CS -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Advanced Specialization Clusters
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Cluster 1: Frontier Machine Intelligence</strong>
+                Large Foundation Models, Transformer Architectures, Multimodal Learning, and Neuro-Symbolic AI.
+              </div>
+              <div class="minor-item">
+                <strong>Cluster 2: Scalable Distributed Systems</strong>
+                Consensus protocols (Paxos/Raft), distributed key-value storage, and fault-tolerant architectures.
+              </div>
+              <div class="minor-item">
+                <strong>Cluster 3: Quantum Computing & Information</strong>
+                Quantum Algorithms (Shor/Grover), Quantum Circuit Simulation, and Qubit Hardware Interfaces.
+              </div>
+            </div>
+          </div>
+
+          <div class="electives-pool-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Cross-School Graduate Electives
+            </h4>
+            <div class="electives-list">
+              <div class="elective-item">
+                <strong>Law & Ethics Elective:</strong> Global AI Governance, Regulatory Frameworks, and Algorithmic Auditing.
+              </div>
+              <div class="elective-item">
+                <strong>Design Elective:</strong> Advanced Interaction Prototyping, Spatial Reality & Vision Computing.
+              </div>
+              <div class="elective-item">
+                <strong>Business Elective:</strong> Technology Commercialization, Deep-Tech Venture Incubation, and IP Strategy.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Curriculum Block 4: Ph.D. in Computer Science -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="cs-phd">
         <div class="curriculum-degree-header">
           <div>
             <h3>Ph.D. in Computer Science</h3>
@@ -325,6 +459,55 @@
             </li>
           </ul>
         </div>
+        <!-- Minors and Elective Pools for Ph.D. in Computer Science -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Doctoral Specialization Clusters
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Foundation Models & Mechanistic Interpretability</strong>
+                Attention circuits, transformer reverse engineering, representation geometry, and alignment verification.
+              </div>
+              <div class="minor-item">
+                <strong>Decentralized Systems & Cryptographic Protocols</strong>
+                Zero-knowledge SNARKs, consensus Byzantine fault tolerance, and verifiable decentralized computing.
+              </div>
+              <div class="minor-item">
+                <strong>Autonomous Robotics & Embodied AI</strong>
+                Sim-to-real transfer, spatial reinforcement learning, tactile sensing, and multi-robot coordination.
+              </div>
+              <div class="minor-item">
+                <strong>Quantum Computational Architectures</strong>
+                Quantum circuits, error mitigation algorithms, quantum advantage proofs, and hybrid quantum-classical algorithms.
+              </div>
+            </div>
+          </div>
+
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Doctoral Research Seminars & Electives
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Advanced Topics in Distributed Systems (OSDI/SOSP Reading)</strong>
+                Critical dissection of foundational papers, fault injection methodologies, and formal verification with TLA+.
+              </div>
+              <div class="minor-item">
+                <strong>Theoretical Foundations of Deep Learning</strong>
+                Overparameterization theory, neural tangent kernels, generalization bounds, and implicit regularization.
+              </div>
+              <div class="minor-item">
+                <strong>Research Ethics, Responsible AI & Policy</strong>
+                Dual-use evaluation, copyright in generative synthesis, watermarking, and academic integrity.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -426,6 +609,7 @@
             <li><a href="../campus-map.html">Building #3 on Map</a></li>
             <li><a href="../placements.html">Placement Outcomes</a></li>
             <li><a href="../faculty.html">CS Faculty</a></li>
+            <li><a href="../clubs-culture.html">Clubs & Culture</a></li>
           </ul>
         </div>
         <div class="footer-col">

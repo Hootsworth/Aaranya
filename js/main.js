@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStatCounters();
   initAccordions();
   initTabSwitchers();
+  initCurriculumTabs();
   initInquiryForms();
   initLightbox();
 });
@@ -152,6 +153,50 @@ function initTabSwitchers() {
         btn.classList.add('active');
         const targetPane = container.querySelector(targetId);
         if (targetPane) targetPane.classList.add('active');
+      });
+    });
+  });
+}
+
+/* Interactive Curriculum Course Selector Tabs */
+function initCurriculumTabs() {
+  const sections = document.querySelectorAll('#curriculum, .curriculum-section');
+  sections.forEach(section => {
+    const nav = section.querySelector('.curriculum-selector-nav');
+    if (!nav) return;
+
+    const buttons = nav.querySelectorAll('.course-selector-btn');
+    const blocks = section.querySelectorAll('.curriculum-degree-block');
+
+    if (!buttons.length || !blocks.length) return;
+
+    // Ensure first button and block are active if none is
+    const hasActiveBtn = nav.querySelector('.course-selector-btn.active');
+    if (!hasActiveBtn && buttons[0]) {
+      buttons[0].classList.add('active');
+    }
+    const hasActiveBlock = section.querySelector('.curriculum-degree-block.active');
+    if (!hasActiveBlock && blocks[0]) {
+      blocks[0].classList.add('active');
+    }
+
+    buttons.forEach((btn, idx) => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        blocks.forEach(blk => blk.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetId = btn.getAttribute('data-target');
+        let targetBlock = null;
+        if (targetId) {
+          targetBlock = section.querySelector('#' + targetId) || document.getElementById(targetId);
+        }
+        if (!targetBlock && blocks[idx]) {
+          targetBlock = blocks[idx];
+        }
+        if (targetBlock) {
+          targetBlock.classList.add('active');
+        }
       });
     });
   });

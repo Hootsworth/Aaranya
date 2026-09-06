@@ -27,8 +27,7 @@
         <svg class="leaf-icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
         </svg>
-        Aaranya.
-        <span class="brand-tagline-sub">University</span>
+        AU
       </a>
 
       <nav class="main-navigation">
@@ -64,7 +63,7 @@
   <div class="drawer-backdrop"></div>
   <div class="mobile-nav-drawer">
     <div class="drawer-header">
-      <span class="brand-wordmark">Aaranya.</span>
+      <span class="brand-wordmark">AU</span>
       <button class="drawer-close">&times;</button>
     </div>
     <div class="drawer-links">
@@ -142,8 +141,16 @@
         <p class="lead-text">Rigorous managerial, econometric, financial, and sociological coursework designed for future CEOs, policy advisors, and venture founders.</p>
       </div>
 
+      <!-- Interactive Course Selection Tabs -->
+      <div class="curriculum-selector-nav">
+        <button class="course-selector-btn active" data-target="biz-bba">B.B.A. (Management)</button>
+        <button class="course-selector-btn" data-target="biz-econ">B.Sc. in Economics</button>
+        <button class="course-selector-btn" data-target="biz-soc">B.A. Business & Society</button>
+        <button class="course-selector-btn" data-target="biz-msc">M.Sc. in Economics</button>
+      </div>
+
       <!-- Curriculum 1: B.B.A. -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block active" id="biz-bba">
         <div class="curriculum-degree-header">
           <div>
             <h3>B.B.A. (Bachelor of Business Administration)</h3>
@@ -199,10 +206,55 @@
             </div>
           </div>
         </div>
+        <!-- Minors & Electives for BBA -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Available Minor Concentrations (20–24 Credits)
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Business Analytics & Artificial Intelligence:</strong>
+                Joint with CS: SQL querying, predictive machine learning models, customer churn forecasting.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Product & Brand Design:</strong>
+                Joint with School of Design: Design thinking, packaging psychology, physical prototyping.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Corporate Law & Governance:</strong>
+                Joint with School of Law: Company law, M&A contracts, competition policy, board compliance.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Sustainable Supply Chains:</strong>
+                Joint with Sustainable Design: Scope 1-3 carbon audits, circular packaging, supplier ethics.
+              </div>
+            </div>
+          </div>
+
+          <div class="electives-pool-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Functional Management Electives
+            </h4>
+            <div class="electives-list">
+              <div class="elective-item">
+                <strong>Finance Electives:</strong> Investment Banking, Portfolio Management, Venture Capital & Private Equity, Derivatives.
+              </div>
+              <div class="elective-item">
+                <strong>Marketing Electives:</strong> Brand Building, Digital Performance Marketing, Neuromarketing, Luxury Brand Management.
+              </div>
+              <div class="elective-item">
+                <strong>Strategy & Operations:</strong> Management Consulting Practicum, Cross-Border E-Commerce, Negotiation Mastery.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Curriculum 2: B.Sc. in Economics -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="biz-econ">
         <div class="curriculum-degree-header">
           <div>
             <h3>B.Sc. in Economics</h3>
@@ -251,39 +303,260 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Curriculum 3: B.A. Business & Society & M.Sc. Economics -->
-      <div class="curriculum-degree-block">
-        <div class="curriculum-degree-header">
-          <div>
-            <h3>B.A. in Business & Society & M.Sc. in Economics</h3>
-            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin-top: 0.2rem;">Interdisciplinary Commerce & Advanced Postgraduate Economic Theory</p>
+        <!-- Minors and Elective Pools for B.Sc. in Economics -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Recommended Minors (20–24 Credits)
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Machine Learning & Computational Data Science</strong>
+                Offered with CS: Python scientific stack, algorithmic forecasting, neural networks, and high-performance computing.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Public Policy & Welfare Jurisprudence</strong>
+                Offered with Law: Regulatory design, administrative law, constitutional fiscal federalism, and antitrust enforcement.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Environmental Economics & Climate Systems</strong>
+                Offered with Liberal Arts: Carbon accounting, planetary boundary models, resource depletion, and renewable energy economics.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Behavioral Decision Sciences & Design Strategy</strong>
+                Offered with Design: Cognitive heuristics, choice architecture, experimental nudge testing, and product usability.
+              </div>
+            </div>
           </div>
-          <span>Specialized & Graduate Programs</span>
+
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Specialized Elective Pools
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Financial Econometrics & High-Frequency Trading</strong>
+                ARCH/GARCH modeling, market microstructure, algorithmic order execution, and volatility estimation.
+              </div>
+              <div class="minor-item">
+                <strong>Mechanism Design, Auction Theory & Market Engineering</strong>
+                Spectrum auctions, matching markets (kidney exchange, school choice), and incentive compatibility.
+              </div>
+              <div class="minor-item">
+                <strong>Economics of Education, Health & Human Capital</strong>
+                Returns to schooling, healthcare provider incentives, epidemic modeling, and child nutrition policy.
+              </div>
+              <div class="minor-item">
+                <strong>Natural Resource Economics & Energy Transition</strong>
+                Oil, gas, critical minerals supply chains, renewable feed-in tariffs, and decarbonization pathways.
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div style="padding: 2rem; background: #ffffff;">
-          <h4 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--color-forest-deep);">B.A. in Business & Society Core Modules:</h4>
-          <div class="grid grid-3" style="margin-bottom: 2rem;">
-            <div style="background: var(--color-canvas-light); padding: 1.25rem; border-radius: 4px; border: 1px solid var(--color-border-hairline);">
-              <strong style="color: var(--color-forest-deep); display: block; margin-bottom: 0.5rem;">Culture, Markets & Power</strong>
-              <p style="font-size: 0.85rem; color: var(--color-ink-muted);">Economic Sociology, Business Anthropologies, Market Failures, and the Moral Foundations of Capitalism.</p>
-            </div>
-            <div style="background: var(--color-canvas-light); padding: 1.25rem; border-radius: 4px; border: 1px solid var(--color-border-hairline);">
-              <strong style="color: var(--color-forest-deep); display: block; margin-bottom: 0.5rem;">Corporate Public Policy</strong>
-              <p style="font-size: 0.85rem; color: var(--color-ink-muted);">Regulatory Capture, Consumer Protection, Labor Rights, and State-Business Relations in Emerging Economies.</p>
-            </div>
-            <div style="background: var(--color-canvas-light); padding: 1.25rem; border-radius: 4px; border: 1px solid var(--color-border-hairline);">
-              <strong style="color: var(--color-forest-deep); display: block; margin-bottom: 0.5rem;">Social Impact Practicum</strong>
-              <p style="font-size: 0.85rem; color: var(--color-ink-muted);">Year-long field immersion with social ventures, microfinance bodies, and fair-trade cooperatives.</p>
+      </div>
+
+            <!-- Curriculum 3: B.A. in Business & Society -->
+      <div class="curriculum-degree-block" id="biz-soc">
+        <div class="curriculum-degree-header">
+          <div>
+            <h3>B.A. in Business & Society</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin-top: 0.2rem;">3–4 Years · 8 Semesters · 140 Credits · Critical Commerce, Political Economy & Social Impact</p>
+          </div>
+          <span>Interdisciplinary Business Degree</span>
+        </div>
+
+        <div class="curriculum-semester-grid">
+          <div class="curriculum-semester-card">
+            <h4>Year 1: Foundations of Markets, Power & Inquiry <span>Semesters 1 & 2</span></h4>
+            <div class="curriculum-courses-list">
+              <div class="curriculum-course-item"><span><span class="course-code">SOC101</span>Culture, Markets & Power Dynamics</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MGT102</span>Moral Foundations of Commercial Enterprise</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">HIS105</span>Global History of Capital & Colonialism</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">QDS104</span>Quantitative Social Inquiry & Survey Analytics</span><span class="course-credits">4 Credits</span></div>
             </div>
           </div>
 
-          <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--color-forest-deep);">M.Sc. in Economics Curriculum (2 Years):</h4>
-          <p style="font-size: 0.9rem; color: var(--color-ink-muted); line-height: 1.6;">
-            Features rigorous graduate training in Advanced Microeconomic Theory (General Equilibrium & Asymmetric Information), Advanced Macroeconomics (DSGE Models & Fiscal Policy), Econometric Machine Learning, and an empirical Master's Thesis under individual faculty supervision.
-          </p>
+          <div class="curriculum-semester-card">
+            <h4>Year 2: Regulatory Architecture & Labor Systems <span>Semesters 3 & 4</span></h4>
+            <div class="curriculum-courses-list">
+              <div class="curriculum-course-item"><span><span class="course-code">POL201</span>Corporate Public Policy & Lobbying Governance</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">LAW202</span>Labor Rights, Automation & Workplace Justice</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">ACC203</span>Environmental Accounting & Carbon Auditing</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">DEV204</span>Political Economy of Industrial Transition</span><span class="course-credits">4 Credits</span></div>
+            </div>
+          </div>
+
+          <div class="curriculum-semester-card">
+            <h4>Year 3: Social Innovation & Field Practicum <span>Semesters 5 & 6</span></h4>
+            <div class="curriculum-courses-list">
+              <div class="curriculum-course-item"><span><span class="course-code">PRA301</span>Social Impact Practicum & Field Immersion</span><span class="course-credits">6 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">ENT302</span>Cooperative Enterprise & Solidarity Business Models</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">SCM303</span>Global Fair-Trade Chains & Ethical Sourcing</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">NGO304</span>Non-Profit Governance & Civil Society Mobilization</span><span class="course-credits">4 Credits</span></div>
+            </div>
+          </div>
+
+          <div class="curriculum-semester-card">
+            <h4>Year 4: Capstone & Applied Intervention <span>Semesters 7 & 8</span></h4>
+            <div class="curriculum-courses-list">
+              <div class="curriculum-course-item"><span><span class="course-code">INC401</span>Social Venture Incubation Studio</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">AUD402</span>Corporate Accountability & Human Rights Due Diligence</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">CAP491</span>Senior Honors Capstone Project & Public Defense</span><span class="course-credits">8 Credits</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Minors and Elective Pools for Business & Society -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Recommended Minors (20–24 Credits)
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Public Policy & Administrative Reform</strong>
+                Offered with Law: Public sector budgeting, RTI mechanisms, regulatory bodies, and civil service ethics.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Ecological Systems & Agrarian Economics</strong>
+                Offered with Liberal Arts: Agrarian distress, rural cooperative banking, water commons, and agroecology.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Digital Platform Architecture</strong>
+                Offered with CS: Gig economy platforms, algorithmic dispatch, digital labor conditions, and platform monopolies.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Social Design & Participatory Media</strong>
+                Offered with Design: Community media, grassroots communication, accessible UI/UX, and advocacy campaigns.
+              </div>
+            </div>
+          </div>
+
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Specialized Elective Pools
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>ESG Investing & Greenwashing Auditing</strong>
+                Taxonomy regulations, double materiality principles, green bond structuring, and activist shareholding.
+              </div>
+              <div class="minor-item">
+                <strong>Feminist Political Economy & Care Infrastructure</strong>
+                Unpaid care work, gender wage disparities, reproductive labor, and feminist budget initiatives.
+              </div>
+              <div class="minor-item">
+                <strong>Philanthropy, Foundations & Venture Ethics</strong>
+                Donor intent, strategic philanthropy scrutiny, endowment ethics, and catalytic capital.
+              </div>
+              <div class="minor-item">
+                <strong>Indigenous Enterprise & Commons Management</strong>
+                Community forest rights, collective trademarking, customary law enterprises, and biopiracy defenses.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curriculum 4: M.Sc. in Economics -->
+      <div class="curriculum-degree-block" id="biz-msc">
+        <div class="curriculum-degree-header">
+          <div>
+            <h3>M.Sc. in Economics</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin-top: 0.2rem;">2 Years · 4 Semesters · 80 Credits · Advanced Micro/Macro, DSGE Models & Machine Learning</p>
+          </div>
+          <span>Postgraduate Quantitative Degree</span>
+        </div>
+
+        <div class="curriculum-semester-grid">
+          <div class="curriculum-semester-card">
+            <h4>Semester 1: Core Graduate Foundations <span>Autumn Term</span></h4>
+            <div class="curriculum-courses-list">
+              <div class="curriculum-course-item"><span><span class="course-code">MEC501</span>Advanced Microeconomic Theory I (General Equilibrium)</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MEC502</span>Advanced Macroeconomics I (DSGE Frameworks)</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MEC503</span>Mathematical Methods for Dynamic Economic Models</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MEC504</span>Advanced Econometric Theory & Asymptotic Inference</span><span class="course-credits">4 Credits</span></div>
+            </div>
+          </div>
+
+          <div class="curriculum-semester-card">
+            <h4>Semester 2: Information, Monetary & Machine Learning <span>Spring Term</span></h4>
+            <div class="curriculum-courses-list">
+              <div class="curriculum-course-item"><span><span class="course-code">MEC505</span>Advanced Microeconomics II (Game Theory & Information)</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MEC506</span>Advanced Macroeconomics II (Monetary & Financial Friction)</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MEC507</span>Microeconometrics of Causal Inference (Diff-in-Diff & IV)</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MEC508</span>Machine Learning & High-Dimensional Economic Data</span><span class="course-credits">4 Credits</span></div>
+            </div>
+          </div>
+
+          <div class="curriculum-semester-card">
+            <h4>Semester 3: Field Seminars & Research Colloquium <span>Autumn Term</span></h4>
+            <div class="curriculum-courses-list">
+              <div class="curriculum-course-item"><span><span class="course-code">MEC601</span>Empirical Industrial Organization & Antitrust</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MEC602</span>International Macro-Finance & Currency Crises</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MEC603</span>Development Economics & Field Experiment Design</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MEC690</span>Master's Thesis Proposal Workshop</span><span class="course-credits">4 Credits</span></div>
+            </div>
+          </div>
+
+          <div class="curriculum-semester-card">
+            <h4>Semester 4: Empirical Thesis & Master's Defense <span>Spring Term</span></h4>
+            <div class="curriculum-courses-list">
+              <div class="curriculum-course-item"><span><span class="course-code">MEC604</span>Public Economics & Optimal Taxation Theory</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MEC605</span>Environmental & Climate Change Economics</span><span class="course-credits">4 Credits</span></div>
+              <div class="curriculum-course-item"><span><span class="course-code">MEC699</span>Master's Thesis Research & Public Oral Defense</span><span class="course-credits">12 Credits</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concentration Tracks and Electives for MSc Economics -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Master's Specialization Tracks
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Quantitative Macro-Finance & Central Banking</strong>
+                Taylor rules, yield curve modeling, bank stress testing, and systemic financial risk metrics.
+              </div>
+              <div class="minor-item">
+                <strong>Development Economics, Poverty & RCTs</strong>
+                Randomized evaluation, micro-credit impact, behavioral poverty traps, and agricultural technology adoption.
+              </div>
+              <div class="minor-item">
+                <strong>Computational Economics & Market Engineering</strong>
+                Agent-based computational finance, matching mechanisms, algorithm pricing collusion, and auction design.
+              </div>
+            </div>
+          </div>
+
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Advanced Elective Pools
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Dynamic Stochastic General Equilibrium (DSGE) Modeling</strong>
+                Dynare coding, Bayesian estimation of macroeconomic shocks, and welfare cost of business cycles.
+              </div>
+              <div class="minor-item">
+                <strong>High-Dimensional Econometrics & Causal ML</strong>
+                Lasso, random forests for heterogeneous treatment effects, double/debiased machine learning, and synthetic controls.
+              </div>
+              <div class="minor-item">
+                <strong>Sovereign Debt Restructuring & Global Financial Architecture</strong>
+                IMF bailout mechanics, debt sustainability frameworks, collective action clauses, and debt-for-climate swaps.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -331,6 +604,7 @@
             <li><a href="../campus-map.html">Building #6 on Map</a></li>
             <li><a href="../placements.html">Career Records</a></li>
             <li><a href="../faculty.html">Faculty Directory</a></li>
+            <li><a href="../clubs-culture.html">Clubs & Culture</a></li>
           </ul>
         </div>
         <div class="footer-col">

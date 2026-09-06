@@ -27,8 +27,7 @@
         <svg class="leaf-icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
         </svg>
-        Aaranya.
-        <span class="brand-tagline-sub">University</span>
+        AU
       </a>
 
       <nav class="main-navigation">
@@ -64,7 +63,7 @@
   <div class="drawer-backdrop"></div>
   <div class="mobile-nav-drawer">
     <div class="drawer-header">
-      <span class="brand-wordmark">Aaranya.</span>
+      <span class="brand-wordmark">AU</span>
       <button class="drawer-close">&times;</button>
     </div>
     <div class="drawer-links">
@@ -240,8 +239,18 @@
         <p class="lead-text">Rigorous studio foundations, material explorations, digital software fluency, and community capstones across 5 accredited degree tracks.</p>
       </div>
 
+      <!-- Interactive Course Selection Tabs -->
+      <div class="curriculum-selector-nav">
+        <button class="course-selector-btn active" data-target="dsn-prod">B.Des. Product Design</button>
+        <button class="course-selector-btn" data-target="dsn-comm">B.Des. Communication Design</button>
+        <button class="course-selector-btn" data-target="dsn-ixd">B.Des. Interaction Design</button>
+        <button class="course-selector-btn" data-target="dsn-sus">B.Des. Sustainable Design</button>
+        <button class="course-selector-btn" data-target="dsn-mdes">M.Des. Design Innovation</button>
+        <button class="course-selector-btn" data-target="dsn-phd">Ph.D. in Design & Social Innovation</button>
+      </div>
+
       <!-- Program 1: B.Des. Product Design -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block active" id="dsn-prod">
         <div class="curriculum-degree-header">
           <div>
             <h3>B.Des. in Product Design</h3>
@@ -290,10 +299,48 @@
             </div>
           </div>
         </div>
+        <!-- Minors & Electives for Product Design -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Available Minor Concentrations (20 Credits)
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Robotics & Physical Computing:</strong> Joint with CS: Actuators, embedded sensor networks, and robotic fabrication.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Biomimetic Materials:</strong> Joint with Natural Sciences: Bio-plastics, cellular foam structures, and thermal mimicry.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Hardware Entrepreneurship:</strong> Joint with Business School: Supply chain tooling, Kickstarter pitch, and DFM economics.
+              </div>
+            </div>
+          </div>
+
+          <div class="electives-pool-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Product Studio Electives
+            </h4>
+            <div class="electives-list">
+              <div class="elective-item">
+                <strong>Studio Elective 1:</strong> Medical Technology & Surgical Device Ergonomics.
+              </div>
+              <div class="elective-item">
+                <strong>Studio Elective 2:</strong> Furniture, Spatial Joinery & Contemporary Woodcraft.
+              </div>
+              <div class="elective-item">
+                <strong>Studio Elective 3:</strong> Clean Mobility, EV Micro-Vehicles & Helmet Systems.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Program 2: B.Des. Communication Design -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="dsn-comm">
         <div class="curriculum-degree-header">
           <div>
             <h3>B.Des. in Communication Design</h3>
@@ -342,10 +389,48 @@
             </div>
           </div>
         </div>
+        <!-- Minors & Electives for Communication Design -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Recommended Minor Concentrations
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Creative Writing & Narrative Strategy:</strong> Screenwriting, creative nonfiction, and brand manifesto storytelling.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Strategic Advertising & Brand Culture:</strong> Consumer psychology, global campaign architecture, and cultural resonance.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Audio Branding & Sound Design:</strong> Sonic identities, podcast production, and spatial acoustic media.
+              </div>
+            </div>
+          </div>
+
+          <div class="electives-pool-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Communication Elective Studios
+            </h4>
+            <div class="electives-list">
+              <div class="elective-item">
+                <strong>Typeface Design Lab:</strong> Glyph geometry, Indic font drawing, and OpenType font engineering.
+              </div>
+              <div class="elective-item">
+                <strong>Editorial Art & Independent Book Publishing:</strong> Risograph printing, binding crafts, and zine distribution.
+              </div>
+              <div class="elective-item">
+                <strong>3D Motion & Computational Graphics:</strong> Cinema4D, Blender, and real-time visual performances.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Program 3: B.Des. Interaction Design -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="dsn-ixd">
         <div class="curriculum-degree-header">
           <div>
             <h3>B.Des. in Interaction Design (IxD & UX)</h3>
@@ -394,10 +479,48 @@
             </div>
           </div>
         </div>
+        <!-- Minors & Electives for Interaction Design -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Available Minor Concentrations
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Artificial Intelligence & Machine Cognition:</strong> Joint with CS: Transformer architectures, prompt engineering, generative systems.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Game Design & Virtual Worlds:</strong> Unreal Engine, game narrative, ludology, and multiplayer mechanics.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Behavioral Psychology & Nudge Systems:</strong> Cognitive biases, habit formation, and digital wellbeing ethics.
+              </div>
+            </div>
+          </div>
+
+          <div class="electives-pool-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Specialized HCI Studios
+            </h4>
+            <div class="electives-list">
+              <div class="elective-item">
+                <strong>Haptics & Tactile Interfaces:</strong> Force feedback motors, micro-vibrations, and non-visual feedback rigs.
+              </div>
+              <div class="elective-item">
+                <strong>Voice UX & Sonic Conversational AI:</strong> Conversational turn-taking, prosody, and ambient audio agents.
+              </div>
+              <div class="elective-item">
+                <strong>Speculative Design & Black Mirror Labs:</strong> Critical provocation, technological dystopia analysis, and future worldbuilding.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Program 4: B.Des. Sustainable Design -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="dsn-sus">
         <div class="curriculum-degree-header">
           <div>
             <h3>B.Des. in Sustainable Design</h3>
@@ -446,10 +569,48 @@
             </div>
           </div>
         </div>
+        <!-- Minors & Electives for Sustainable Design -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Recommended Minor Concentrations
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Ecology & Conservation Biology:</strong> Wetlands hydrology, native pollinators, and forest restoration.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Environmental Jurisprudence:</strong> Climate litigation, tribal land tenure, and international environmental law.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Social Entrepreneurship & Circular Finance:</strong> Green venture capital, carbon trading, and community mutuals.
+              </div>
+            </div>
+          </div>
+
+          <div class="electives-pool-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Regenerative Design Studios
+            </h4>
+            <div class="electives-list">
+              <div class="elective-item">
+                <strong>Mycelium & Bio-Fabrication Studio:</strong> Culturing fungal mycelium into packaging, acoustic tiles, and insulation.
+              </div>
+              <div class="elective-item">
+                <strong>Decentralized Water & Renewable Power:</strong> Rainwater harvesting networks, solar cookers, and low-cost filtration.
+              </div>
+              <div class="elective-item">
+                <strong>Circular Fashion & Natural Dye Chemistry:</strong> Zero-waste pattern cutting, organic indigo vatting, and compostable textiles.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Program 5: M.Des. Design Innovation -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="dsn-mdes">
         <div class="curriculum-degree-header">
           <div>
             <h3>M.Des. in Design Innovation & Emerging Technologies</h3>
@@ -478,10 +639,39 @@
             </div>
           </div>
         </div>
+        <!-- Graduate Venture Tracks for M.Des. -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Graduate Venture Concentrations
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Track 1: Strategic Foresight & Planetary Futures:</strong> 20-year horizon scanning, Delphi panels, and geopolitical scenario modeling.
+              </div>
+              <div class="minor-item">
+                <strong>Track 2: Deep-Tech Venture Incubation:</strong> Seed accelerator pitch, prototype demo days, and angel investor syndicates.
+              </div>
+            </div>
+          </div>
+
+          <div class="electives-pool-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Cross-Border Studio Immersion
+            </h4>
+            <div class="electives-list">
+              <div class="elective-item">
+                <strong>Global Design Residency:</strong> 4-week exchange with partner design laboratories in Tokyo, Milan, or London.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Program 6: Ph.D. in Design -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="dsn-phd">
         <div class="curriculum-degree-header">
           <div>
             <h3>Ph.D. in Design & Social Innovation</h3>
@@ -509,6 +699,51 @@
             </div>
           </div>
         </div>
+        <!-- Minors and Elective Pools for Ph.D. in Design & Social Innovation -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Doctoral Specialization Clusters
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Participatory Action Research & Grassroots Innovation</strong>
+                Decolonial co-design methodologies, community-led innovation labs, and indigenous knowledge sovereignty.
+              </div>
+              <div class="minor-item">
+                <strong>Biomimetic Systems & Circular Material Futures</strong>
+                Bio-fabricated interfaces, metabolic cycles, life-cycle material analysis, and regenerative materiality.
+              </div>
+              <div class="minor-item">
+                <strong>Critical Speculative Futures & Ontological Design</strong>
+                Discursive artifact generation, futures literacy, transitional design, and ethical techno-social governance.
+              </div>
+            </div>
+          </div>
+
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Doctoral Theory Seminars & Electives
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Phenomenology of Perception & Spatial Empathy</strong>
+                Embodied cognitive theory, sensory ethnography, spatial choreography, and ecological psychology.
+              </div>
+              <div class="minor-item">
+                <strong>Historiography & Philosophy of Design Praxis</strong>
+                Post-industrial critiques, Bauhaus to cybernetics genealogies, and political economies of design.
+              </div>
+              <div class="minor-item">
+                <strong>Advanced Curation & Discursive Exhibition Craft</strong>
+                Museum ethics, interactive installation discourse, and public scholarship dissemination.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -561,6 +796,7 @@
           <h4>Campus Directory</h4>
           <ul>
             <li><a href="../campus-map.html">Interactive 21-Zone Map</a></li>
+            <li><a href="../clubs-culture.html">Clubs & Culture</a></li>
             <li><a href="../faculty.html">Design Faculty Directory</a></li>
             <li><a href="../placements.html">Studio Placements</a></li>
           </ul>

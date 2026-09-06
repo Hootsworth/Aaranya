@@ -184,25 +184,26 @@ h4 {
   color: var(--color-canvas-white);
 }
 
-/* Brand Wordmark */
+/* Brand Wordmark (Collegiate Monogram "AU") */
 .brand-wordmark {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
+  gap: 0.35rem;
   font-family: var(--font-serif);
-  font-weight: 700;
-  font-size: 1.95rem;
-  letter-spacing: -0.01em;
+  font-weight: 800;
+  font-size: 1.85rem;
+  letter-spacing: 0.05em;
   color: var(--color-forest-deep);
   position: relative;
   text-decoration: none;
+  line-height: 1;
 }
 
 .brand-wordmark .leaf-icon {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 3px;
-  transform: translateY(-2px);
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
   color: var(--color-ochre);
 }
 
@@ -879,6 +880,45 @@ h4 {
   margin-top: 3.5rem;
 }
 
+/* Course Selector Button Bar */
+.curriculum-selector-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 2rem 0 2.5rem;
+}
+
+.course-selector-btn {
+  background: var(--color-canvas-white);
+  border: 1.5px solid var(--color-border-hairline);
+  color: var(--color-forest-deep);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.88rem;
+  padding: 0.7rem 1.35rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.course-selector-btn:hover {
+  border-color: var(--color-ochre);
+  color: var(--color-ochre);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-subtle);
+}
+
+.course-selector-btn.active {
+  background: var(--color-forest-deep);
+  border-color: var(--color-forest-deep);
+  color: var(--color-canvas-white);
+  box-shadow: var(--shadow-subtle);
+}
+
 .curriculum-degree-block {
   background: var(--color-canvas-white);
   border: 1px solid var(--color-border-hairline);
@@ -886,6 +926,70 @@ h4 {
   margin-bottom: 2.5rem;
   overflow: hidden;
   box-shadow: var(--shadow-subtle);
+  display: none; /* hidden until selected */
+  animation: fadeInBlock 0.35s ease forwards;
+}
+
+.curriculum-degree-block.active {
+  display: block;
+}
+
+@keyframes fadeInBlock {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Minors and Electives Component */
+.curriculum-minors-block {
+  background: #ffffff;
+  border-top: 1px solid var(--color-border-hairline);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.minors-track-card, .electives-pool-card {
+  background: var(--color-canvas-tint);
+  border: 1px solid var(--color-border-hairline);
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.minors-track-card h4, .electives-pool-card h4 {
+  font-size: 1.05rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--color-border-hairline);
+  padding-bottom: 0.5rem;
+}
+
+.minors-list, .electives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.minor-item, .elective-item {
+  font-size: 0.86rem;
+  color: var(--color-ink-base);
+  line-height: 1.5;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+}
+
+.minor-item:last-child, .elective-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.minor-item strong, .elective-item strong {
+  color: var(--color-forest-deep);
+  display: block;
+  font-size: 0.9rem;
 }
 
 .curriculum-degree-header {

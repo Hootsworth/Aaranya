@@ -27,8 +27,7 @@
         <svg class="leaf-icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
         </svg>
-        Aaranya.
-        <span class="brand-tagline-sub">University</span>
+        AU
       </a>
 
       <nav class="main-navigation">
@@ -64,7 +63,7 @@
   <div class="drawer-backdrop"></div>
   <div class="mobile-nav-drawer">
     <div class="drawer-header">
-      <span class="brand-wordmark">Aaranya.</span>
+      <span class="brand-wordmark">AU</span>
       <button class="drawer-close">&times;</button>
     </div>
     <div class="drawer-links">
@@ -142,8 +141,18 @@
         <p class="lead-text">Detailed semester coursework combining classical literary scholarship, empirical social science, biological exploration, and cognitive inquiry.</p>
       </div>
 
+      <!-- Course Selector Buttons -->
+      <div class="curriculum-selector-nav">
+        <button class="course-selector-btn active" data-target="la-hum">B.A. (Hons.) Humanities</button>
+        <button class="course-selector-btn" data-target="la-ss">B.A. (Hons.) Social Sciences</button>
+        <button class="course-selector-btn" data-target="la-ns">B.Sc. (Hons.) Natural Sciences</button>
+        <button class="course-selector-btn" data-target="la-pg">M.A. / M.Sc. Interdisciplinary</button>
+      </div>
+
+
+
       <!-- Division 1: Humanities -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block active" id="la-hum">
         <div class="curriculum-degree-header">
           <div>
             <h3>Division of Humanities: B.A. (Hons.)</h3>
@@ -182,10 +191,64 @@
             </div>
           </div>
         </div>
+
+        <!-- Minors and Electives for Humanities -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Recommended Minors (20–24 Credits)
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Digital Humanities & Computational Linguistics</strong>
+                Offered with CS: Text mining, corpus linguistics, digital archives preservation, and natural language models.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Environmental Ethics & Law</strong>
+                Offered with Law: Rights of nature, ecological jurisprudence, environmental justice, and climate ethics.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Creative Industries & Cultural Management</strong>
+                Offered with Business: Arts administration, intellectual property, heritage curation, and cultural enterprise.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Speculative Fiction & Narrative Design</strong>
+                Offered with Design: Worldbuilding, interactive storytelling, screenwriting, and transmedia dramaturgy.
+              </div>
+            </div>
+          </div>
+
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Specialized Elective Pools
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Sanskrit Hermeneutics & Classical Philology</strong>
+                Rigorous study of primary philosophical texts, grammar traditions, and comparative Indo-European linguistics.
+              </div>
+              <div class="minor-item">
+                <strong>Epistemology of Scientific Knowledge</strong>
+                Falsificationism, paradigm shifts, social construction of facts, and the philosophy of quantum reality.
+              </div>
+              <div class="minor-item">
+                <strong>Comparative Religious Mysticism & Philosophy</strong>
+                Sufism, Advaita Vedanta, Buddhist Madhyamaka, and Christian mysticism in cross-cultural dialogue.
+              </div>
+              <div class="minor-item">
+                <strong>Critical Archive Studies & Museum Curation</strong>
+                Material culture, provenance ethics, colonial restitution, and experimental exhibition design.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- Division 2: Social Sciences -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="la-ss">
         <div class="curriculum-degree-header">
           <div>
             <h3>Division of Social Sciences: B.A. (Hons.)</h3>
@@ -224,10 +287,64 @@
             </div>
           </div>
         </div>
+
+        <!-- Minors and Electives for Social Sciences -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Recommended Minors (20–24 Credits)
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Econometrics & Public Finance</strong>
+                Offered with Business: Empirical microeconometrics, fiscal policy, taxation models, and development funding.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Constitutional Law & Human Rights</strong>
+                Offered with Law: Judicial review, civil liberties, administrative jurisprudence, and human rights advocacy.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Computational Social Science</strong>
+                Offered with CS: Complex network analytics, agent-based modeling, online sentiment dynamics, and big social data.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Urban Design & Spatial Justice</strong>
+                Offered with Design: Inclusive urbanism, zoning governance, transit-oriented ecosystems, and housing equity.
+              </div>
+            </div>
+          </div>
+
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Specialized Elective Pools
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Geopolitics of the Global South & Indian Ocean</strong>
+                Maritime security, non-aligned diplomacy, energy corridors, and post-hegemonic global architecture.
+              </div>
+              <div class="minor-item">
+                <strong>Behavioral Economics & Nudge Architecture</strong>
+                Bounded rationality, heuristic biases, welfare program optimization, and behavioral interventions.
+              </div>
+              <div class="minor-item">
+                <strong>Agrarian Movements & Rural Transformation</strong>
+                Land tenure, peasant political economy, climate agrarian resilience, and supply chain sovereignty.
+              </div>
+              <div class="minor-item">
+                <strong>Digital Surveillance & Privacy Sociology</strong>
+                Platform capitalism, algorithmic sorting, biometric state systems, and digital civil liberties.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- Division 3: Natural Sciences -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="la-ns">
         <div class="curriculum-degree-header">
           <div>
             <h3>Division of Natural Sciences: B.Sc. (Hons.)</h3>
@@ -266,10 +383,64 @@
             </div>
           </div>
         </div>
+
+        <!-- Minors and Electives for Natural Sciences -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Recommended Minors (20–24 Credits)
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Minor in Bioinformatics & Computational Biology</strong>
+                Offered with CS: Next-gen sequencing analysis, protein folding algorithms, and computational metabolomics.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Climate Policy & Environmental Jurisprudence</strong>
+                Offered with Law: Carbon accounting, Paris Agreement compliance, bio-conservation law, and carbon taxation.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Sustainable Product Materials & Biomimicry</strong>
+                Offered with Design: Circular bio-composites, nature-inspired structural engineering, and lifecycle analysis.
+              </div>
+              <div class="minor-item">
+                <strong>Minor in Science Communication & Public Engagement</strong>
+                Offered with Humanities: Scientific journalism, policy briefs, scientific podcasting, and public trust in science.
+              </div>
+            </div>
+          </div>
+
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Specialized Elective Pools
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Wetland Biogeochemistry & Lake Ecosystem Dynamics</strong>
+                Fieldwork at Aaranya Living Lake: nutrient flux, limnology, riparian microbial ecology, and restoration.
+              </div>
+              <div class="minor-item">
+                <strong>Quantum Mechanics & Statistical Thermodynamics</strong>
+                Schrödinger equations, wave-particle duality, ensemble theory, and macroscopic emergent states.
+              </div>
+              <div class="minor-item">
+                <strong>Organic Synthesis & Green Chemistry Protocols</strong>
+                Solvent-free reactions, biocatalysis, solar flow reactors, and non-toxic polymer synthesis.
+              </div>
+              <div class="minor-item">
+                <strong>Neurobiology of Learning and Memory</strong>
+                Synaptic plasticity, electrophysiology, hippocampal coding, and optogenetic research methodologies.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- Division 4: Interdisciplinary Programs -->
-      <div class="curriculum-degree-block">
+      <div class="curriculum-degree-block" id="la-pg">
         <div class="curriculum-degree-header">
           <div>
             <h3>Interdisciplinary Graduate Programs: M.A. / M.Sc.</h3>
@@ -298,6 +469,52 @@
             </div>
           </div>
         </div>
+
+        <!-- Minors and Electives for Interdisciplinary Graduate Programs -->
+        <div class="curriculum-minors-block">
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+              Graduate Concentration Tracks
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Planetary Boundaries & Climate Resilience</strong>
+                Earth-system tipping points, ecological threshold analysis, carbon sink restoration, and polycentric governance.
+              </div>
+              <div class="minor-item">
+                <strong>Neuroethics & Cognitive AI Systems</strong>
+                Moral status of artificial agents, neural implants, free will in computational cognitive science, and ethical AI.
+              </div>
+              <div class="minor-item">
+                <strong>Indigenous Ecological Knowledge Systems</strong>
+                Traditional land management, sacred groves conservation, ethno-botany, and decolonial biodiversity regimes.
+              </div>
+            </div>
+          </div>
+
+          <div class="minors-track-card">
+            <h4>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+              Specialized Elective Pools
+            </h4>
+            <div class="minors-list">
+              <div class="minor-item">
+                <strong>Complex Adaptive Systems & Agent-Based Modeling</strong>
+                Non-linear dynamics, emergence, feedback loops, and multi-agent simulation in NetLogo/Python.
+              </div>
+              <div class="minor-item">
+                <strong>Transboundary Resource Treaties & Water Diplomacy</strong>
+                International river basins, dispute resolution, international court mechanisms, and hydro-politics.
+              </div>
+              <div class="minor-item">
+                <strong>Decolonial Thought in Sustainable Development</strong>
+                Critique of growth metrics, post-development theory, buen vivir, and Swaraj eco-philosophies.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -344,6 +561,7 @@
             <li><a href="../campus-map.html">Building #4 on Map</a></li>
             <li><a href="../faculty.html">Liberal Arts Faculty</a></li>
             <li><a href="../admissions.html">Admissions</a></li>
+            <li><a href="../clubs-culture.html">Clubs & Culture</a></li>
           </ul>
         </div>
         <div class="footer-col">
