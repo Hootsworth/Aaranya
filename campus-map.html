@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Campus Map | Aaranya University Masterplan</title>
+  <meta name="description" content="Explore Aaranya University's 250+ acre campus masterplan featuring 21 architectural landmarks, Aaranya Lake, The Harmony Quad, academic blocks, and forest trails.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <div><strong>Campus Guide:</strong> Guided walking tours depart daily from the Main Welcome Center (Landmark #1).</div>
+      <div class="announcement-links">
+        <a href="index.html">Home</a>
+        <a href="campus-life.html">Campus Life</a>
+        <a href="contact.html">Transit & Metro</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-wordmark">
+        <svg class="leaf-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+        </svg>
+        Aaranya.
+        <span class="brand-tagline-sub">University</span>
+      </a>
+
+      <nav class="main-navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="academics.html" class="nav-link">Academics</a>
+        <div class="nav-item">
+          <a href="#" class="nav-link">Schools ▾</a>
+          <div class="dropdown-menu">
+            <a href="schools/computer-science.html" class="dropdown-link">School of Computer Science</a>
+            <a href="schools/liberal-arts.html" class="dropdown-link">School of Liberal Arts & Sciences</a>
+            <a href="schools/law.html" class="dropdown-link">School of Law</a>
+            <a href="schools/business.html" class="dropdown-link">School of Business & Economics</a>
+          </div>
+        </div>
+        <a href="admissions.html" class="nav-link">Admissions</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="campus-life.html" class="nav-link">Campus Life</a>
+        <a href="placements.html" class="nav-link">Placements</a>
+        <a href="campus-map.html" class="nav-link active">Campus Map</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="admissions.html" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.8rem;">Apply Now</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop"></div>
+  <div class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <span class="brand-wordmark">Aaranya.</span>
+      <button class="drawer-close">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Aaranya</a>
+      <a href="academics.html">Academics</a>
+      <a href="schools/computer-science.html">School of Computer Science</a>
+      <a href="schools/liberal-arts.html">School of Liberal Arts & Sciences</a>
+      <a href="schools/law.html">School of Law</a>
+      <a href="schools/business.html">School of Business & Economics</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="research.html">Research</a>
+      <a href="campus-life.html">Campus Life</a>
+      <a href="placements.html">Placements</a>
+      <a href="campus-map.html">Campus Map</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <span>Campus Map</span>
+      </div>
+      <h1>Official Campus Map & Spatial Masterplan</h1>
+      <p>“A wider world, within your reach. Nature nurtures brighter minds.” Explore our 250+ acre living campus blueprint and its 21 designated landmarks.</p>
+    </div>
+  </section>
+
+  <!-- Dual View Switcher & Filter Bar -->
+  <section class="section" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid var(--color-border-hairline); padding-bottom: 1.5rem;">
+        <div>
+          <span class="eyebrow" style="margin-bottom: 0.25rem;">Filter Landmarks by Zone</span>
+          <div class="map-filter-bar" style="margin-bottom: 0;">
+            <button class="map-filter-btn active" data-category="all">All 21 Landmarks</button>
+            <button class="map-filter-btn" data-category="academic">Academic Blocks</button>
+            <button class="map-filter-btn" data-category="admin">Admin & Welcome</button>
+            <button class="map-filter-btn" data-category="research">Research & Eco</button>
+            <button class="map-filter-btn" data-category="residential">Hostels</button>
+            <button class="map-filter-btn" data-category="student-life">Student Life</button>
+            <button class="map-filter-btn" data-category="sports">Sports Arena</button>
+            <button class="map-filter-btn" data-category="green">Green Trails</button>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem;">
+          <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.78rem; display: inline-flex; align-items: center; gap: 0.35rem;" data-lightbox-src="assets/images/official_campus_map.jpg" data-lightbox-caption="Aaranya University Official Masterplan Map (21 Landmarks)">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            Zoom 2D Blueprint
+          </button>
+          <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.78rem; display: inline-flex; align-items: center; gap: 0.35rem;" data-lightbox-src="assets/images/campus_aerial_master.jpg" data-lightbox-caption="Aaranya University 3D Aerial Bird's Eye View">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            Zoom 3D Aerial
+          </button>
+        </div>
+      </div>
+
+      <!-- Map Layout Grid -->
+      <div class="map-layout">
+        
+        <!-- Left: Official Map Display Frame -->
+        <div>
+          <div class="map-view-box">
+            <img id="campusMapMainImg" src="assets/images/official_campus_map.jpg" alt="Aaranya University Official Campus Map" data-lightbox-src="assets/images/official_campus_map.jpg" data-lightbox-caption="Official Aaranya University Master Campus Map (Click to zoom)">
+            <div style="margin-top: 0.75rem; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.8rem; color: var(--color-ink-muted);">Click map image to open high-resolution zoomable viewer</span>
+              <span class="pill pill-forest">21 Designated Points</span>
+            </div>
+          </div>
+
+          <!-- Secondary Aerial Perspective Card -->
+          <div style="margin-top: 1.5rem; background: var(--color-canvas-white); border: 1px solid var(--color-border-hairline); border-radius: var(--radius-sm); padding: 1.25rem; display: flex; align-items: center; gap: 1.25rem;">
+            <img src="assets/images/campus_aerial_master.jpg" alt="Campus Aerial Preview" style="width: 140px; height: 90px; object-fit: cover; border-radius: 4px; cursor: pointer;" data-lightbox-src="assets/images/campus_aerial_master.jpg" data-lightbox-caption="Aaranya University Panoramic Aerial Masterplan">
+            <div>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">View 3D Aerial Campus Panorama</h4>
+              <p style="font-size: 0.85rem; color: var(--color-ink-muted); margin-bottom: 0.5rem;">See how the academic blocks, The Nexus Library, Serenity Lake, and sunset points integrate into the natural terrain.</p>
+              <button class="card-link" style="background: none; border: none; cursor: pointer;" data-lightbox-src="assets/images/campus_aerial_master.jpg" data-lightbox-caption="Aaranya University 3D Aerial Landscape View">Open Aerial View Modal →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Active Landmark Details & Interactive Directory -->
+        <div>
+          <!-- Dynamic Detail Card -->
+          <div id="landmarkDetailCard" style="margin-bottom: 1.5rem;">
+            <!-- Rendered by map.js -->
+          </div>
+
+          <!-- Directory Scroll List -->
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.5rem;">Interactive 21-Landmark Guide</span>
+            <div class="landmark-directory" id="landmarksList">
+              <!-- Rendered by map.js -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete 21 Landmark Master Table -->
+  <section class="section section-tint">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Master Directory</span>
+        <h2>Full Campus Legend & Building Key</h2>
+      </div>
+
+      <div class="table-responsive">
+        <table class="academic-table">
+          <thead>
+            <tr>
+              <th style="width: 70px;">#</th>
+              <th>Campus Landmark</th>
+              <th>Category</th>
+              <th>Signature Tagline</th>
+              <th>Description & Key Facilities</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1</strong></td>
+              <td><strong>Main Entrance & Welcome Center</strong></td>
+              <td>Admin & Gateway</td>
+              <td><em>The Ceremonial Gateway</em></td>
+              <td>Visitor registration, campus tour assembly, security desk, direct metro transit stop.</td>
+            </tr>
+            <tr>
+              <td><strong>2</strong></td>
+              <td><strong>Administrative Block</strong></td>
+              <td>University Governance</td>
+              <td><em>Leadership & Senate</em></td>
+              <td>Offices of Chancellor, Vice-Chancellor, Registrar, Academic Council Chamber.</td>
+            </tr>
+            <tr>
+              <td><strong>3</strong></td>
+              <td><strong>School of Computer Sciences</strong></td>
+              <td>Academic</td>
+              <td><em>Code · Create · Collaborate · Change</em></td>
+              <td>AI research suites, distributed systems cluster, robotics lab, hackathon space.</td>
+            </tr>
+            <tr>
+              <td><strong>4</strong></td>
+              <td><strong>School of Liberal Arts & Sciences</strong></td>
+              <td>Academic</td>
+              <td><em>People · Perspectives · Possibilities</em></td>
+              <td>Humanities seminar suites, natural science wet labs, philosophy and psychology labs.</td>
+            </tr>
+            <tr>
+              <td><strong>5</strong></td>
+              <td><strong>School of Law</strong></td>
+              <td>Academic</td>
+              <td><em>Ideas · Justice · Society · Change</em></td>
+              <td>International moot court complex, free legal aid clinic, constitutional research archive.</td>
+            </tr>
+            <tr>
+              <td><strong>6</strong></td>
+              <td><strong>School of Business & Economics</strong></td>
+              <td>Academic</td>
+              <td><em>Insight · Innovation · Impact</em></td>
+              <td>Bloomberg financial terminal room, case-study halls, social enterprise lab.</td>
+            </tr>
+            <tr>
+              <td><strong>7</strong></td>
+              <td><strong>Central Library (The Nexus)</strong></td>
+              <td>Academic & Library</td>
+              <td><em>Knowledge for a Kinder World</em></td>
+              <td>Curved architectural wonder on Aaranya Lake, 250,000+ volumes, 24/7 quiet study.</td>
+            </tr>
+            <tr>
+              <td><strong>8</strong></td>
+              <td><strong>Research & Innovation Hub</strong></td>
+              <td>Research & Enterprise</td>
+              <td><em>Ideas into Impact</em></td>
+              <td>Rapid prototyping makerspace, 3D printing labs, seed stage venture incubator.</td>
+            </tr>
+            <tr>
+              <td><strong>9</strong></td>
+              <td><strong>Auditorium & Convention Center</strong></td>
+              <td>Culture & Events</td>
+              <td><em>Grand Stage for Thought & Art</em></td>
+              <td>1,500-seat acoustic theater for international symposia and convocations.</td>
+            </tr>
+            <tr>
+              <td><strong>10</strong></td>
+              <td><strong>Student Centre (The Forum)</strong></td>
+              <td>Student Life</td>
+              <td><em>Clubs, Events & Collaboration</em></td>
+              <td>Headquarters for 45+ student clubs, acoustic band rooms, recreation rooms.</td>
+            </tr>
+            <tr>
+              <td><strong>11</strong></td>
+              <td><strong>Academic Core</strong></td>
+              <td>Academic</td>
+              <td><em>Interdisciplinary Nexus</em></td>
+              <td>Shaded faculty rotunda physically and intellectually bridging the collegiate schools.</td>
+            </tr>
+            <tr>
+              <td><strong>12</strong></td>
+              <td><strong>Lakeside Learning Commons</strong></td>
+              <td>Student Life & Study</td>
+              <td><em>Pause. Reconnect.</em></td>
+              <td>Open-air timber decks and gazebos with solar power & Wi-Fi overlooking the lake.</td>
+            </tr>
+            <tr>
+              <td><strong>13</strong></td>
+              <td><strong>Hostel Residences (North)</strong></td>
+              <td>Residential</td>
+              <td><em>The Grove: North Quads</em></td>
+              <td>Quiet eco-residence blocks surrounded by shaded forest gardens.</td>
+            </tr>
+            <tr>
+              <td><strong>14</strong></td>
+              <td><strong>Hostel Residences (South)</strong></td>
+              <td>Residential</td>
+              <td><em>The Grove: South Quads</em></td>
+              <td>Vibrant student living quads with courtyard study lounges and hill views.</td>
+            </tr>
+            <tr>
+              <td><strong>15</strong></td>
+              <td><strong>Sports Complex (The Arena)</strong></td>
+              <td>Sports & Athletics</td>
+              <td><em>Stronger Minds, Healthier Futures</em></td>
+              <td>Olympic synthetic track, FIFA football pitch, all-weather courts, heated swimming pool.</td>
+            </tr>
+            <tr>
+              <td><strong>16</strong></td>
+              <td><strong>Health & Wellness Centre</strong></td>
+              <td>Healthcare & Wellness</td>
+              <td><em>Holistic Care for Body & Mind</em></td>
+              <td>24/7 medical infirmary, psychological counseling, mindfulness and yoga suites.</td>
+            </tr>
+            <tr>
+              <td><strong>17</strong></td>
+              <td><strong>Cafés & Dining (The Commons)</strong></td>
+              <td>Dining & Social</td>
+              <td><em>Good Food. Great Conversations.</em></td>
+              <td>Multi-cuisine dining hall, farm-to-table organic produce, bakery, and open terraces.</td>
+            </tr>
+            <tr>
+              <td><strong>18</strong></td>
+              <td><strong>Amphitheatre</strong></td>
+              <td>Culture & Events</td>
+              <td><em>Under the Open Sky</em></td>
+              <td>Natural stone tiered amphitheater for Shakespearean plays, poetry, and acoustic sets.</td>
+            </tr>
+            <tr>
+              <td><strong>19</strong></td>
+              <td><strong>Open Lawns & The Harmony Quad</strong></td>
+              <td>Green Spaces</td>
+              <td><em>Community in Every Corner</em></td>
+              <td>Grand circular lawn at the campus center for convocations and cultural gatherings.</td>
+            </tr>
+            <tr>
+              <td><strong>20</strong></td>
+              <td><strong>Nature Trail & Forest Walk</strong></td>
+              <td>Green Spaces & Trails</td>
+              <td><em>Nature Nurtures Brighter Minds</em></td>
+              <td>2.5 km preserved biodiversity path through indigenous forests up to Sunset Point.</td>
+            </tr>
+            <tr>
+              <td><strong>21</strong></td>
+              <td><strong>Sustainability Zone</strong></td>
+              <td>Research & Eco</td>
+              <td><em>Greener Solutions</em></td>
+              <td>1.2 MW photovoltaic solar farm, rainwater bio-filtration, organic research gardens.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <a href="index.html" class="brand-wordmark brand-light" style="margin-bottom: 1rem;">Aaranya.<span class="brand-tagline-sub">University</span></a>
+          <p style="font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.65; margin-bottom: 1.5rem;">Learn · Belong · Become</p>
+        </div>
+        <div class="footer-col">
+          <h4>Collegiate Schools</h4>
+          <ul>
+            <li><a href="schools/computer-science.html">School of Computer Science</a></li>
+            <li><a href="schools/liberal-arts.html">Liberal Arts & Sciences</a></li>
+            <li><a href="schools/law.html">School of Law</a></li>
+            <li><a href="schools/business.html">Business & Economics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Campus Highlights</h4>
+          <ul>
+            <li><a href="campus-life.html#residences">The Grove Residences</a></li>
+            <li><a href="campus-life.html#arena">The Arena Sports</a></li>
+            <li><a href="campus-life.html#wellness">Health Centre</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="placements.html">Placements</a></li>
+            <li><a href="contact.html">Campus Visits</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visitor Reception</h4>
+          <p style="font-size: 0.85rem; color: rgba(255,255,255,0.72);">
+            Main Welcome Center (Gate 1)<br>
+            tours@aaranya.edu.in<br>
+            +91 (0) 800-AARANYA
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Aaranya University. All Rights Reserved.</div>
+        <div class="footer-legal">
+          <a href="about.html">Statutory Charter</a>
+          <a href="contact.html">Campus Directory</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>
