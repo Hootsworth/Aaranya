@@ -1717,3 +1717,214 @@ textarea.form-control {
     text-align: center;
   }
 }
+
+/* ==========================================================================
+   PLACEMENT PORTAL & REPORT ENHANCEMENTS
+   ========================================================================== */
+.placement-data-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0 2rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-hairline);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.placement-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.placement-data-table th {
+  background-color: var(--color-forest-deep);
+  color: #ffffff;
+  padding: 0.85rem 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.placement-data-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--color-border-hairline);
+  color: var(--color-ink);
+  vertical-align: middle;
+}
+
+.placement-data-table tbody tr:nth-child(even) {
+  background-color: var(--color-canvas-light);
+}
+
+.placement-data-table tbody tr:hover {
+  background-color: #f1f6f3;
+}
+
+.placement-data-table tr.total-row {
+  background-color: #e8f2ec !important;
+  font-weight: 700;
+  color: var(--color-forest-deep);
+  border-top: 2px solid var(--color-forest-mid);
+}
+
+.stat-badge-success {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  background-color: #e6f4ea;
+  color: #137333;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+.stat-badge-gold {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  background-color: #fef7e0;
+  color: #b06000;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+.offer-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  background: var(--color-forest-deep);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+
+/* Student Roll of Honour Grid */
+.student-honour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.student-honour-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border-hairline);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-snappy), box-shadow var(--transition-snappy);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.student-honour-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-forest-mid);
+}
+
+.student-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.student-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--color-forest-deep);
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  font-family: var(--font-serif);
+  flex-shrink: 0;
+  border: 2px solid var(--color-gold);
+}
+
+.student-info h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--color-forest-deep);
+}
+
+.student-info span {
+  font-size: 0.8rem;
+  color: var(--color-ink-muted);
+}
+
+.student-role-box {
+  margin: 0.75rem 0 1rem;
+  padding: 0.75rem 0.9rem;
+  background: var(--color-canvas-light);
+  border-radius: 4px;
+  border-left: 3px solid var(--color-ochre);
+}
+
+.student-role-box strong {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--color-forest-deep);
+}
+
+.student-role-box span {
+  font-size: 0.8rem;
+  color: var(--color-ink-muted);
+}
+
+.student-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-border-hairline);
+  padding-top: 0.85rem;
+  font-size: 0.8rem;
+}
+
+.student-ctc-badge {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--color-forest-deep);
+  background: #eaf2ed;
+  padding: 0.3rem 0.65rem;
+  border-radius: 4px;
+}
+
+/* Download Brochure Banner */
+.brochure-download-banner {
+  background: linear-gradient(135deg, var(--color-forest-deep) 0%, #0d2319 100%);
+  color: #ffffff;
+  padding: 3rem;
+  border-radius: var(--radius-sm);
+  margin: 3rem 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(197, 155, 39, 0.3);
+}
+
+.brochure-download-banner h3 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.brochure-download-banner p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  max-width: 620px;
+  line-height: 1.6;
+}
