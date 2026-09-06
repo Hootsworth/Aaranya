@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statutory Compliance, Anti-Ragging & Student Welfare | Aaranya University</title>
+  <meta name="description" content="Official statutory disclosures, Anti-Ragging Cell, Internal Complaints Committee (POSH Act 2013), Equal Opportunity Cell, and Student Welfare Councils of Aaranya University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-wordmark">
+        Aaranya.<span class="brand-tagline-sub">University</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="academics.html" class="nav-link">Academics</a>
+        <a href="admissions.html" class="nav-link">Admissions</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="campus-life.html" class="nav-link">Campus Life</a>
+        <a href="placements.html" class="nav-link">Placements</a>
+        <a href="campus-map.html" class="nav-link">Campus Map</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="admissions.html" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.8rem;">Apply Now</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <div class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <span class="brand-wordmark">AU</span>
+      <button class="drawer-close">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Aaranya</a>
+      <a href="academics.html">Academics</a>
+      <a href="academic-calendar.html">Academic Calendar (AY 2026)</a>
+      <a href="examinations.html">Examinations & Grading</a>
+      <a href="compliance.html" style="color: var(--color-ochre); font-weight: 600;">Statutory Compliance & Welfare</a>
+      <a href="health-wellness.html">Campus Health & Wellness</a>
+      <a href="careers.html">Work at Aaranya (Careers)</a>
+      <a href="alumni.html">Alumni & Giving</a>
+      <a href="international.html">International Affairs</a>
+      <a href="news-events.html">News & Events</a>
+      <a href="governance.html">Governance & Leadership</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Unified Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <span>Statutory Compliance & Student Welfare</span>
+      </div>
+      <h1>Statutory Compliance, Anti-Ragging & Student Welfare</h1>
+      <p>“Safety, Dignity, and Zero Tolerance.” Mandated statutory committees, anti-ragging flying squads, gender sensitization protocols under the POSH Act 2013, and equal opportunity charters.</p>
+    </div>
+  </section>
+
+  <!-- Emergency Statutory Helpline Banner -->
+  <section style="background: #8B261E; color: #ffffff; padding: 1.5rem 0;">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.25rem;">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <div style="background: rgba(255,255,255,0.15); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="#ffffff"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 6h2v6h-2V7zm1 10.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/></svg>
+          </div>
+          <div>
+            <strong style="font-size: 1.1rem; display: block; letter-spacing: 0.02em;">24x7 Aaranya Emergency Safety & Anti-Ragging Helpline</strong>
+            <span style="font-size: 0.88rem; opacity: 0.9;">Campus Security Control: <strong>+91 (0) 800-AAR-SAFE</strong> (Toll-Free) | National UGC Helpline: <strong>1800-180-5522</strong></span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 0.75rem;">
+          <button id="openReportModalBtn" class="btn" style="background: #ffffff; color: #8B261E; font-weight: 700; border: none; padding: 0.65rem 1.25rem; font-size: 0.85rem;">Lodge Confidential Report</button>
+          <button id="openAffidavitModalBtn" class="btn" style="background: rgba(255,255,255,0.2); color: #ffffff; border: 1px solid rgba(255,255,255,0.5); padding: 0.65rem 1.25rem; font-size: 0.85rem;">Online Anti-Ragging Affidavit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statutory Accreditations Bar -->
+  <section style="background: var(--color-canvas-tint); border-bottom: 1px solid var(--color-border-hairline); padding: 1.25rem 0;">
+    <div class="container">
+      <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 1.5rem; font-size: 0.85rem; color: var(--color-forest-deep); font-weight: 600;">
+        <span style="display: inline-flex; align-items: center; gap: 0.4rem;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> UGC Regulations on Curbing Ragging (2009)
+        </span>
+        <span style="display: inline-flex; align-items: center; gap: 0.4rem;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Sexual Harassment of Women at Workplace (POSH Act 2013)
+        </span>
+        <span style="display: inline-flex; align-items: center; gap: 0.4rem;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Rights of Persons with Disabilities Act 2016
+        </span>
+        <span style="display: inline-flex; align-items: center; gap: 0.4rem;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> UGC Students' Grievance Redressal Regulations 2023
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Sections -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Section 1: Anti-Ragging Cell -->
+      <div style="margin-bottom: 4rem;" id="anti-ragging">
+        <div class="section-header">
+          <span class="eyebrow">Zero Tolerance Policy</span>
+          <h2>Anti-Ragging Cell & Flying Squad</h2>
+          <p class="lead-text">Ragging in any form is strictly prohibited across all collegiate schools, residential hostels, dining pavilions, transport buses, and sports grounds.</p>
+        </div>
+
+        <div class="grid grid-2" style="gap: 3rem; align-items: flex-start;">
+          <div>
+            <div class="prose" style="font-size: 0.95rem; line-height: 1.7; color: var(--color-ink-muted);">
+              <p>In full conformity with the Hon'ble Supreme Court of India directives and UGC Regulations, Aaranya University enforces an absolute zero-tolerance framework. Ragging is defined as any disorderly conduct whether by words spoken or written, or by an act that has the effect of teasing, treating, or handling with rudeness any other student.</p>
+              
+              <h4 style="color: var(--color-forest-deep); margin-top: 1.5rem; margin-bottom: 0.5rem;">Mandatory Undertakings</h4>
+              <p>At the inception of every academic session, every enrolled student and their parent/guardian must execute an online anti-ragging affidavit through the National Anti-Ragging Web Portal (<a href="https://www.antiragging.in" target="_blank" rel="noopener" style="color: var(--color-ochre); text-decoration: underline;">antiragging.in</a>) and submit the verification reference number to the Registrar's Office during registration.</p>
+
+              <h4 style="color: var(--color-forest-deep); margin-top: 1.5rem; margin-bottom: 0.5rem;">Statutory Penalties under Ordinance 22</h4>
+              <ul style="list-style: disc; padding-left: 1.25rem; line-height: 1.7;">
+                <li>Immediate suspension from attending lectures and academic privileges.</li>
+                <li>Withholding of examination results, scholarships, and fellowships.</li>
+                <li>Permanent expulsion from university residential hostels.</li>
+                <li>Rustication from the institution for periods varying from 1 to 4 semesters.</li>
+                <li>Mandatory registration of a First Information Report (FIR) with the local police precinct.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Squad & Committee Composition Table -->
+          <div style="background: var(--color-canvas-tint); padding: 2rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border-hairline);">
+            <span class="eyebrow" style="color: var(--color-forest-deep);">Statutory Roster AY 2026–2027</span>
+            <h3 style="font-size: 1.3rem; margin-bottom: 1.25rem;">Anti-Ragging Committee</h3>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.88rem;">
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--color-border-hairline); padding-bottom: 0.6rem;">
+                <div>
+                  <strong>Prof. (Dr.) Radhakrishnan Pillai</strong>
+                  <span style="display: block; font-size: 0.8rem; color: var(--color-ink-muted);">Vice-Chancellor</span>
+                </div>
+                <span class="badge" style="background: var(--color-forest-deep); color: #fff; height: fit-content; padding: 0.2rem 0.6rem; font-size: 0.75rem;">Chairperson</span>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--color-border-hairline); padding-bottom: 0.6rem;">
+                <div>
+                  <strong>Prof. Priya Venkatesh</strong>
+                  <span style="display: block; font-size: 0.8rem; color: var(--color-ink-muted);">Dean of Student Welfare</span>
+                </div>
+                <span class="badge" style="background: var(--color-ochre); color: #fff; height: fit-content; padding: 0.2rem 0.6rem; font-size: 0.75rem;">Convenor</span>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--color-border-hairline); padding-bottom: 0.6rem;">
+                <div>
+                  <strong>Prof. (Dr.) Vikram Singhania</strong>
+                  <span style="display: block; font-size: 0.8rem; color: var(--color-ink-muted);">Registrar</span>
+                </div>
+                <span style="color: var(--color-ink-muted); font-size: 0.8rem;">Member Ex-Officio</span>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--color-border-hairline); padding-bottom: 0.6rem;">
+                <div>
+                  <strong>Mr. Rajeev Nambiar, IPS (Retd.)</strong>
+                  <span style="display: block; font-size: 0.8rem; color: var(--color-ink-muted);">Chief Security Advisor</span>
+                </div>
+                <span style="color: var(--color-ink-muted); font-size: 0.8rem;">Civil Administration</span>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--color-border-hairline); padding-bottom: 0.6rem;">
+                <div>
+                  <strong>Ms. Shanta Hegde</strong>
+                  <span style="display: block; font-size: 0.8rem; color: var(--color-ink-muted);">Pratham Foundation (Civil Society NGO)</span>
+                </div>
+                <span style="color: var(--color-ink-muted); font-size: 0.8rem;">External Representative</span>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; padding-bottom: 0.4rem;">
+                <div>
+                  <strong>Student Council President & General Secretary</strong>
+                  <span style="display: block; font-size: 0.8rem; color: var(--color-ink-muted);">Elected Student Representatives</span>
+                </div>
+                <span style="color: var(--color-ink-muted); font-size: 0.8rem;">Student Nominees</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px dashed var(--color-border-hairline);">
+              <span style="font-size: 0.82rem; color: var(--color-ink-muted); display: block;">
+                <strong>Anti-Ragging Flying Squad:</strong> Conducts unannounced night surveillance across Hostels A, B, C, D, dining halls, and lake promenade from 21:00 to 05:00 hrs daily.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Internal Complaints Committee (POSH Act 2013) -->
+      <div style="margin-bottom: 4rem; padding-top: 2rem; border-top: 1px solid var(--color-border-hairline);" id="icc-posh">
+        <div class="section-header">
+          <span class="eyebrow">Gender Safety & Workplace Dignity</span>
+          <h2>Internal Complaints Committee (ICC / POSH)</h2>
+          <p class="lead-text">Established pursuant to the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013.</p>
+        </div>
+
+        <div class="grid grid-3" style="gap: 2rem; margin-bottom: 2.5rem;">
+          <div class="editorial-card">
+            <span class="eyebrow" style="color: var(--color-ochre);">Presiding Officer</span>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.35rem;">Dr. Arundhati Ghosh</h3>
+            <span style="font-size: 0.82rem; color: var(--color-ink-muted); display: block; margin-bottom: 0.75rem;">Pro-Vice-Chancellor & Professor of Philosophy</span>
+            <p style="font-size: 0.88rem; color: var(--color-ink-muted);">Directs statutory inquiry proceedings, ensures strict victim confidentiality, and presents recommendations directly to the Board of Governors.</p>
+            <div style="margin-top: 1rem; font-size: 0.82rem; color: var(--color-ink-primary);">
+              <strong>Confidential Desk:</strong> icc.presiding@aaranya.edu.in
+            </div>
+          </div>
+
+          <div class="editorial-card">
+            <span class="eyebrow" style="color: var(--color-forest-deep);">Guaranteed Protocols</span>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.35rem;">Statutory Inquiries</h3>
+            <ul style="font-size: 0.85rem; color: var(--color-ink-muted); line-height: 1.7; list-style: disc; padding-left: 1.15rem;">
+              <li><strong>Timebound Completion:</strong> Preliminary report within 10 days; final inquiry concluded within 90 days.</li>
+              <li><strong>Interim Protection:</strong> Safe housing transfer, leave sanctions, or restraining orders during proceedings.</li>
+              <li><strong>Absolute Secrecy:</strong> Identity of the complainant and witnesses protected under penal sanctions.</li>
+            </ul>
+          </div>
+
+          <div class="editorial-card">
+            <span class="eyebrow" style="color: var(--color-forest-deep);">External Jurist Nominee</span>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.35rem;">Adv. Meenakshi Sundaram</h3>
+            <span style="font-size: 0.82rem; color: var(--color-ink-muted); display: block; margin-bottom: 0.75rem;">Senior Advocate, Karnataka High Court</span>
+            <p style="font-size: 0.88rem; color: var(--color-ink-muted);">External legal representative from Centre for Women's Legal Aid ensuring objective oversight and strict procedural due process.</p>
+            <div style="margin-top: 1rem; font-size: 0.82rem; color: var(--color-ink-primary);">
+              <strong>External Counsel:</strong> icc.external@aaranya.edu.in
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--color-forest-deep); color: #ffffff; padding: 2rem; border-radius: var(--radius-sm); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+          <div>
+            <h3 style="color: #ffffff; font-size: 1.35rem; margin-bottom: 0.35rem;">Need to Report an Incident with Complete Privacy?</h3>
+            <p style="font-size: 0.92rem; color: rgba(255,255,255,0.8); max-width: 700px; margin: 0;">You may file a written complaint directly to the Presiding Officer or use the secure, encrypted reporting portal below. Anonymous grievances are immediately reviewed by the preliminary cell.</p>
+          </div>
+          <button class="btn btn-ochre" onclick="document.getElementById('complaintModal').classList.add('active')">Submit Confidential ICC Report</button>
+        </div>
+      </div>
+
+      <!-- Section 3: Equal Opportunity Cell & SGRC Ombudsman -->
+      <div style="margin-bottom: 4rem; padding-top: 2rem; border-top: 1px solid var(--color-border-hairline);">
+        <div class="grid grid-2" style="gap: 3rem;">
+          
+          <!-- Equal Opportunity Cell (EOC) -->
+          <div id="eoc">
+            <span class="eyebrow">Equity & Inclusion</span>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Equal Opportunity Cell (EOC) & SC/ST/OBC Liaison</h3>
+            <p style="font-size: 0.92rem; color: var(--color-ink-muted); line-height: 1.7; margin-bottom: 1rem;">
+              The Equal Opportunity Cell oversees the implementation of government policies, affirmative actions, scholarship disbursement, and non-discrimination mandates for scheduled castes, scheduled tribes, other backward classes, and religious minorities.
+            </p>
+            <div style="background: var(--color-canvas-tint); padding: 1.25rem; border-radius: var(--radius-sm); border-left: 3px solid var(--color-ochre); margin-bottom: 1rem;">
+              <strong style="font-size: 0.9rem; color: var(--color-forest-deep); display: block;">Liaison Officer: Dr. Manish Roy</strong>
+              <span style="font-size: 0.85rem; color: var(--color-ink-muted);">Office: CS Block, Suite 108 · Email: eoc@aaranya.edu.in</span>
+            </div>
+            <ul style="font-size: 0.85rem; color: var(--color-ink-muted); line-height: 1.7; list-style: disc; padding-left: 1.25rem;">
+              <li>Central and State Government Post-Matric Scholarship assistance desk.</li>
+              <li>Free remedial academic coaching and English language bridge programs.</li>
+              <li>Dedicated grievance portal against social prejudice or caste bias.</li>
+            </ul>
+          </div>
+
+          <!-- Students' Grievance Redressal Committee (SGRC) & Ombudsman -->
+          <div id="grievance">
+            <span class="eyebrow">Fair Administrative Recourse</span>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Student Grievances & University Ombudsman</h3>
+            <p style="font-size: 0.92rem; color: var(--color-ink-muted); line-height: 1.7; margin-bottom: 1rem;">
+              In accordance with the UGC (Redressal of Grievances of Students) Regulations 2023, the university has established a formal multi-tier dispute resolution channel for evaluation grievances, fee issues, and institutional administrative decisions.
+            </p>
+            <div style="background: var(--color-canvas-tint); padding: 1.25rem; border-radius: var(--radius-sm); border-left: 3px solid var(--color-forest-deep); margin-bottom: 1rem;">
+              <strong style="font-size: 0.9rem; color: var(--color-forest-deep); display: block;">University Ombudsman: Hon. Justice (Retd.) V. Gopala Gowda</strong>
+              <span style="font-size: 0.85rem; color: var(--color-ink-muted);">Appointed pursuant to UGC Notification · ombudsman@aaranya.edu.in</span>
+            </div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+              <span class="badge" style="background: #ffffff; border: 1px solid var(--color-border-hairline); padding: 0.35rem 0.75rem; font-size: 0.8rem;">Tier 1: School Dean</span>
+              <span class="badge" style="background: #ffffff; border: 1px solid var(--color-border-hairline); padding: 0.35rem 0.75rem; font-size: 0.8rem;">Tier 2: SGRC (15 Days)</span>
+              <span class="badge" style="background: #ffffff; border: 1px solid var(--color-border-hairline); padding: 0.35rem 0.75rem; font-size: 0.8rem;">Tier 3: Ombudsman Appeal</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Section 4: Divyangjan (Accessibility & Universal Design) -->
+      <div style="margin-bottom: 4rem; padding-top: 2rem; border-top: 1px solid var(--color-border-hairline);" id="accessibility">
+        <div class="section-header">
+          <span class="eyebrow">Barrier-Free Campus</span>
+          <h2>Divyangjan Accessibility & Universal Design</h2>
+          <p class="lead-text">Ensuring full physical, sensory, and digital access across our 120-acre forest sanctuary for differently-abled scholars.</p>
+        </div>
+
+        <div class="grid grid-4" style="gap: 1.5rem;">
+          <div class="editorial-card" style="text-align: center;">
+            <div style="width: 50px; height: 50px; margin: 0 auto 1rem; border-radius: 50%; background: var(--color-canvas-tint); display: flex; align-items: center; justify-content: center; color: var(--color-forest-deep);">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
+            </div>
+            <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Tactile Pathways & Ramps</h4>
+            <p style="font-size: 0.85rem; color: var(--color-ink-muted);">100% of academic blocks, dining halls, and residential towers feature 1:12 graded ramps and tactile paving.</p>
+          </div>
+
+          <div class="editorial-card" style="text-align: center;">
+            <div style="width: 50px; height: 50px; margin: 0 auto 1rem; border-radius: 50%; background: var(--color-canvas-tint); display: flex; align-items: center; justify-content: center; color: var(--color-forest-deep);">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+            </div>
+            <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Assistive Library Tech</h4>
+            <p style="font-size: 0.85rem; color: var(--color-ink-muted);">Dedicated computer terminals equipped with JAWS, NVDA, screen-magnifiers, and audio-text braille embossers.</p>
+          </div>
+
+          <div class="editorial-card" style="text-align: center;">
+            <div style="width: 50px; height: 50px; margin: 0 auto 1rem; border-radius: 50%; background: var(--color-canvas-tint); display: flex; align-items: center; justify-content: center; color: var(--color-forest-deep);">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.04 3H5.81l1.04-3zM19 17H5v-4.66l.12-.34h13.77l.11.34V17z"/></svg>
+            </div>
+            <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Electric Mobility Buggies</h4>
+            <p style="font-size: 0.85rem; color: var(--color-ink-muted);">Zero-emission on-demand campus shuttles connecting all perimeter stops directly to academic amphitheaters.</p>
+          </div>
+
+          <div class="editorial-card" style="text-align: center;">
+            <div style="width: 50px; height: 50px; margin: 0 auto 1rem; border-radius: 50%; background: var(--color-canvas-tint); display: flex; align-items: center; justify-content: center; color: var(--color-forest-deep);">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Exam Scribe & Extra Time</h4>
+            <p style="font-size: 0.85rem; color: var(--color-ink-muted);">Compensatory time of 20 minutes per hour and accredited scribes provided under Ordinance 14-B.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5: Statutory Downloadable Forms & Gazette Charters -->
+      <div style="padding-top: 2rem; border-top: 1px solid var(--color-border-hairline);">
+        <div class="section-header text-center">
+          <span class="eyebrow">Document Repository</span>
+          <h2>Statutory Affidavits & Regulatory Charters</h2>
+          <p class="lead-text">Download gazetted compliance ordinances and official undertaking formats.</p>
+        </div>
+
+        <div class="grid grid-3" style="gap: 2rem;">
+          <div class="editorial-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="eyebrow" style="color: var(--color-ochre);">Statutory Format</span>
+              <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Anti-Ragging Undertaking (Student & Parent)</h4>
+              <p style="font-size: 0.85rem; color: var(--color-ink-muted);">Official dual affidavit template required to be executed on non-judicial stamp paper during annual enrollment registration.</p>
+            </div>
+            <button class="btn btn-ghost-dark" style="margin-top: 1.5rem; width: 100%; font-size: 0.82rem;" onclick="alert('Downloading Aaranya University Anti-Ragging Undertaking Form (PDF)...')">Download Form (PDF · 180 KB)</button>
+          </div>
+
+          <div class="editorial-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="eyebrow" style="color: var(--color-ochre);">Statutory Gazette</span>
+              <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;">ICC Gender Sensitization Policy Manual</h4>
+              <p style="font-size: 0.85rem; color: var(--color-ink-muted);">Full legislative provisions of the POSH Act 2013 and Aaranya University's internal inquiry rules and timelines.</p>
+            </div>
+            <button class="btn btn-ghost-dark" style="margin-top: 1.5rem; width: 100%; font-size: 0.82rem;" onclick="alert('Downloading Aaranya University ICC Policy Manual (PDF)...')">Download Policy (PDF · 420 KB)</button>
+          </div>
+
+          <div class="editorial-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="eyebrow" style="color: var(--color-ochre);">Statutory Gazette</span>
+              <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Equal Opportunity & Disability Charter</h4>
+              <p style="font-size: 0.85rem; color: var(--color-ink-muted);">Campus accessibility specifications, scribe appointment norms, and non-discrimination administrative mandates.</p>
+            </div>
+            <button class="btn btn-ghost-dark" style="margin-top: 1.5rem; width: 100%; font-size: 0.82rem;" onclick="alert('Downloading Equal Opportunity & Universal Design Charter (PDF)...')">Download Charter (PDF · 290 KB)</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal 1: Confidential Incident Lodgement -->
+  <div class="pdf-modal-backdrop" id="complaintModal">
+    <div class="pdf-modal-dialog" style="max-width: 650px; padding: 2.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid var(--color-border-hairline); padding-bottom: 1rem;">
+        <div>
+          <span class="eyebrow" style="color: #8B261E; margin: 0;">Privileged & Confidential</span>
+          <h3 style="font-size: 1.4rem; margin: 0.25rem 0 0;">Lodge Incident Report / Grievance</h3>
+        </div>
+        <button onclick="document.getElementById('complaintModal').classList.remove('active')" style="background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--color-ink-muted);">&times;</button>
+      </div>
+
+      <form id="incidentForm" onsubmit="event.preventDefault(); document.getElementById('complaintSuccess').style.display='block'; document.getElementById('incidentForm').style.display='none';">
+        <div style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Target Committee / Cell</label>
+          <select class="form-control" style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border-hairline); border-radius: var(--radius-sm);" required>
+            <option value="icc">Internal Complaints Committee (ICC - Sexual Harassment / Gender Disrespect)</option>
+            <option value="anti-ragging">Anti-Ragging Flying Squad (Hostel / Campus Bullying)</option>
+            <option value="eoc">Equal Opportunity Cell (Caste / Community Discrimination)</option>
+            <option value="sgrc">Students' Grievance Redressal Committee (Academic / Admin Issues)</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Reporting Option</label>
+          <div style="display: flex; gap: 1.5rem; font-size: 0.88rem;">
+            <label><input type="radio" name="anon" value="no" checked onchange="document.getElementById('contactFields').style.display='block'"> Disclose Identity to Committee</label>
+            <label><input type="radio" name="anon" value="yes" onchange="document.getElementById('contactFields').style.display='none'"> Submit Anonymously</label>
+          </div>
+        </div>
+
+        <div id="contactFields" style="margin-bottom: 1.25rem;">
+          <div class="grid grid-2" style="gap: 1rem;">
+            <div>
+              <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Your Full Name</label>
+              <input type="text" class="form-control" style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border-hairline); border-radius: var(--radius-sm);" placeholder="Aditya Dixit">
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">AU Roll Number / Email</label>
+              <input type="text" class="form-control" style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border-hairline); border-radius: var(--radius-sm);" placeholder="au2025cs019@aaranya.edu.in">
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Date & Incident Location</label>
+          <input type="text" class="form-control" style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border-hairline); border-radius: var(--radius-sm);" placeholder="e.g. Sept 2, 2026, 22:30 hrs at Hostel B Common Lounge" required>
+        </div>
+
+        <div style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Detailed Statement of Facts</label>
+          <textarea class="form-control" rows="4" style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border-hairline); border-radius: var(--radius-sm);" placeholder="Describe the incident objectively, including persons involved and witnesses..." required></textarea>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem;">
+          <button type="button" class="btn btn-ghost-dark" onclick="document.getElementById('complaintModal').classList.remove('active')">Cancel</button>
+          <button type="submit" class="btn btn-primary" style="background: #8B261E; border-color: #8B261E;">Submit Formal Lodgement</button>
+        </div>
+      </form>
+
+      <div id="complaintSuccess" style="display: none; text-align: center; padding: 2rem 1rem;">
+        <div style="width: 60px; height: 60px; margin: 0 auto 1rem; border-radius: 50%; background: #E8F5E9; color: #2E7D32; display: flex; align-items: center; justify-content: center;">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </div>
+        <h4 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Incident Report Successfully Registered</h4>
+        <p style="font-size: 0.9rem; color: var(--color-ink-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+          Your reference dossier token is <strong>#AU-ICC-2026-0982</strong>. The Presiding Officer and Convenor have been notified directly over secure channels. You will receive acknowledgement within 24 hours.
+        </p>
+        <button class="btn btn-primary" onclick="document.getElementById('complaintModal').classList.remove('active'); document.getElementById('incidentForm').style.display='block'; document.getElementById('complaintSuccess').style.display='none';">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Online Anti-Ragging Affidavit Submission -->
+  <div class="pdf-modal-backdrop" id="affidavitModal">
+    <div class="pdf-modal-dialog" style="max-width: 600px; padding: 2.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid var(--color-border-hairline); padding-bottom: 1rem;">
+        <div>
+          <span class="eyebrow" style="color: var(--color-forest-deep); margin: 0;">UGC Compliance Portal</span>
+          <h3 style="font-size: 1.35rem; margin: 0.25rem 0 0;">Submit Anti-Ragging Reference Number</h3>
+        </div>
+        <button onclick="document.getElementById('affidavitModal').classList.remove('active')" style="background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--color-ink-muted);">&times;</button>
+      </div>
+
+      <form id="affidavitForm" onsubmit="event.preventDefault(); document.getElementById('affidavitSuccess').style.display='block'; document.getElementById('affidavitForm').style.display='none';">
+        <p style="font-size: 0.85rem; color: var(--color-ink-muted); margin-bottom: 1.25rem;">
+          First execute your declaration on <a href="https://www.antiragging.in" target="_blank" rel="noopener" style="color: var(--color-ochre); font-weight: 600;">www.antiragging.in</a>, then record your national registration number with the university registrar below.
+        </p>
+        <div style="margin-bottom: 1rem;">
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">Student Name</label>
+          <input type="text" class="form-control" style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border-hairline); border-radius: var(--radius-sm);" placeholder="Full Legal Name" required>
+        </div>
+        <div style="margin-bottom: 1rem;">
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">University Enrollment / Application ID</label>
+          <input type="text" class="form-control" style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border-hairline); border-radius: var(--radius-sm);" placeholder="e.g. AU-2026-UG-4821" required>
+        </div>
+        <div style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">National Anti-Ragging Reference Number (from antiragging.in)</label>
+          <input type="text" class="form-control" style="width: 100%; padding: 0.65rem; border: 1px solid var(--color-border-hairline); border-radius: var(--radius-sm);" placeholder="e.g. AR-2026-IND-984210" required>
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 0.75rem;">
+          <button type="button" class="btn btn-ghost-dark" onclick="document.getElementById('affidavitModal').classList.remove('active')">Cancel</button>
+          <button type="submit" class="btn btn-ochre">Ratify Affidavit Record</button>
+        </div>
+      </form>
+
+      <div id="affidavitSuccess" style="display: none; text-align: center; padding: 2rem 1rem;">
+        <div style="width: 55px; height: 55px; margin: 0 auto 1rem; border-radius: 50%; background: #E8F5E9; color: #2E7D32; display: flex; align-items: center; justify-content: center;">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </div>
+        <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Anti-Ragging Affidavit Recorded</h4>
+        <p style="font-size: 0.88rem; color: var(--color-ink-muted); margin-bottom: 1.5rem;">
+          Your statutory clearance status for Academic Year 2026–2027 is now verified in the Registrar's Central Student Information System.
+        </p>
+        <button class="btn btn-primary" onclick="document.getElementById('affidavitModal').classList.remove('active'); document.getElementById('affidavitForm').style.display='block'; document.getElementById('affidavitSuccess').style.display='none';">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <a href="index.html" class="brand-wordmark brand-light" style="margin-bottom: 1rem;">
+            Aaranya.<span class="brand-tagline-sub">University</span>
+          </a>
+          <p style="font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.65; margin-bottom: 1.5rem;">
+            A premier residential university rooted in nature and dedicated to humanistic inquiry, scientific discovery, jurisprudence, and ethical leadership.
+          </p>
+          <span style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold); font-weight: 600;">Learn · Belong · Become</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Operations</h4>
+          <ul>
+            <li><a href="academic-calendar.html">Academic Calendar (AY 2026 PDF)</a></li>
+            <li><a href="examinations.html">Examination & Grading Ordinances</a></li>
+            <li><a href="academics.html">Degrees & Curricula</a></li>
+            <li><a href="governance.html">Academic Council & Leadership</a></li>
+            <li><a href="faculty.html">Faculty Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Collegiate Schools</h4>
+          <ul>
+            <li><a href="schools/computer-science.html">School of Computer Science</a></li>
+            <li><a href="schools/liberal-arts.html">Liberal Arts & Sciences</a></li>
+            <li><a href="schools/law.html">School of Law</a></li>
+            <li><a href="schools/business.html">Business & Economics</a></li>
+            <li><a href="schools/design.html">School of Design & Innovation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Institutional Portals</h4>
+          <ul>
+            <li><a href="compliance.html" style="color: var(--color-gold); font-weight: 600;">Statutory Compliance & Welfare</a></li>
+            <li><a href="health-wellness.html">Campus Health & Wellness</a></li>
+            <li><a href="careers.html">Careers at Aaranya</a></li>
+            <li><a href="alumni.html">Alumni Network & Giving</a></li>
+            <li><a href="international.html">Office of International Affairs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Statutory Compliance Desk</h4>
+          <p style="font-size: 0.85rem; color: rgba(255,255,255,0.72); line-height: 1.6; margin-bottom: 1rem;">
+            Registrar's Statutory Secretariat<br>
+            Administrative Block, Ground Floor<br>
+            Aaranya Lake Campus
+          </p>
+          <p style="font-size: 0.85rem; color: rgba(255,255,255,0.72);">
+            <strong>Anti-Ragging Squad:</strong> +91 (0) 800-AAR-SAFE<br>
+            <strong>ICC Presiding Officer:</strong> icc@aaranya.edu.in
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Aaranya University. All Rights Reserved. Empowered by statutory charter.</div>
+        <div class="footer-legal">
+          <a href="governance.html">Statutory Charter & Accreditations</a>
+          <a href="compliance.html">Anti-Ragging & POSH</a>
+          <a href="academic-calendar.html">Gazetted AY 2026 Calendar</a>
+          <a href="examinations.html">Grading Ordinances</a>
+          <a href="contact.html">Campus Directory</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('openReportModalBtn')?.addEventListener('click', function() {
+      document.getElementById('complaintModal').classList.add('active');
+    });
+    document.getElementById('openAffidavitModalBtn')?.addEventListener('click', function() {
+      document.getElementById('affidavitModal').classList.add('active');
+    });
+  </script>
+</body>
+</html>
