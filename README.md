@@ -179,6 +179,47 @@ The Aaranya chromatic identity reflects the natural canopy of an ancient foreste
 
 ---
 
+### 3.5 School of Design & Innovation
+- **Motto:** *Imagine · Design · Solve · Belong — Design for people. Innovate for a kinder tomorrow.*
+- **Philosophy:** *“At the School of Design and Innovation, we empower curious minds to reimagine the world. Through design, technology and human-centred thinking, we create solutions that are thoughtful, inclusive and impactful.”*
+- **Mantra:** *“Design is not just what it looks like, but what it makes possible.”* | *“Design for what truly matters.”* | *“Spaces · Tools · People · Ideas · Into Impact”*
+- **Core Pillars:**
+  1. **Interdisciplinary Learning:** Cross-pollination between industrial design, computational intelligence, cognitive psychology, and ecological sciences.
+  2. **Industry Collaborations:** Live problem statements from 25+ studio partners, multinational product companies, and public institutions.
+  3. **Innovation Labs:** 24/7 access to physical computing, CNC fabrication, bio-materials, and spatial AR/VR rigs.
+  4. **Real-World Impact:** Tangible solutions designed for planetary health, social equity, and human dignity.
+- **Impact Metrics:**
+  - **100+** Live projects executed in the last 3 years
+  - **25+** Global industry and creative studio partners
+  - **4** International cross-border studio collaborations
+  - **90%** Undergraduate students with real-world industry project experience
+- **Degree Programs & Syllabi:**
+  - **B.Des. in Product Design (4 Years · 8 Semesters · 160 Credits):**  
+    *“Design tangible solutions for everyday life.”*  
+    Foundational form studies, anthropometry & ergonomics, 3D CAD modeling, smart hardware & IoT, universal design, and manufacturing processes (DFM).
+  - **B.Des. in Communication Design (4 Years · 8 Semesters · 160 Credits):**  
+    *“Tell stories that inspire and create change.”*  
+    Typography systems, visual semiotics, motion graphics, publication design, information visualization, and social change campaigns.
+  - **B.Des. in Interaction Design & HCI (4 Years · 8 Semesters · 160 Credits):**  
+    *“Design experiences for a more connected world.”*  
+    User research methodologies, component design systems, creative coding, AR/VR spatial computing, AI interfaces, and service design.
+  - **B.Des. in Sustainable Design (4 Years · 8 Semesters · 160 Credits):**  
+    *“Create for a regenerative and equitable future.”*  
+    Circular product cycles, bio-materials, life cycle analysis (LCA), resilient community habitats, and regenerative environmental governance.
+  - **M.Des. in Design Innovation & Emerging Technologies (2 Years · 4 Semesters · 80 Credits):**  
+    *“Research. Experiment. Build what's next.”*  
+    Strategic foresight, speculative design futures, advanced physical computing, cross-disciplinary venture incubation, and master's degree capstone thesis.
+  - **Ph.D. in Design & Social Innovation (3–5 Years · Doctoral Degree):**  
+    Frontier research into human-centred design epistemologies, participatory community immersion, and design ethics.
+- **Beyond the Classroom Ecosystem:**
+  - **State-of-the-Art Studios:** Digital fabrication, rapid 3D prototyping, wood & metal craft workshops, and AR/VR spatial immersion rigs.
+  - **Live Projects:** Direct field engagements with regional craft communities, transit authorities, healthcare facilities, and social enterprises.
+  - **Exhibitions & Showcases:** Annual Aaranya Design Triennale, open portfolio juries, public critique salons, and global design competitions.
+  - **Thriving Club Culture:** Makers Guild, Typography Society, IxD/UX Guild, Film & Photography Guild, and Sustainable Living Collective.
+- **Value Matrix:** `IMAGINE` · `DESIGN` · `SOLVE` · `BELONG` · `PEOPLE` · `PLANET` · `POSSIBILITY`
+
+---
+
 ## 4. Career Development & Placements ("The Aaranya Advantage")
 
 ### 4.1 Master Placement Statistics & Metrics
